@@ -1,6 +1,6 @@
 "use client";
 
-import { TbPlaylist } from "react-icons/tb";
+import { VscLibrary } from "react-icons/vsc";
 import { AiOutlinePlus } from "react-icons/ai";
 
 const Library = () => {
@@ -12,7 +12,7 @@ const Library = () => {
     <div className="flex flex-col">
       <div className="flex items-center justify-between px-5 pt-4">
         <div className="inline-flex items-center gap-x-2">
-          <TbPlaylist size={26} className="text-neutral-400" />
+          <VscLibrary size={26} className="text-neutral-400" />
           <p className="text-base font-medium text-neutral-400">Your Library</p>
         </div>
         <AiOutlinePlus
