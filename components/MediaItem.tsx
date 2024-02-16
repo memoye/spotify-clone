@@ -6,7 +6,7 @@ import Image from "next/image";
 
 interface MediaItemProps {
   data: Song;
-  onClick: (id: string) => void;
+  onClick?: (id: string) => void;
 }
 
 const MediaItem: React.FC<MediaItemProps> = ({ data, onClick }) => {
@@ -27,6 +27,7 @@ const MediaItem: React.FC<MediaItemProps> = ({ data, onClick }) => {
       <div className="relative min-h-12 min-w-12 overflow-hidden rounded-md">
         <Image
           fill
+          sizes=""
           src={imageUrl || "/images/liked.png"}
           alt="Media Item"
           className="object-cover"
